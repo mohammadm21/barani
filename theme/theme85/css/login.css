@@ -1,0 +1,482 @@
+/* ==========================================================================
+   بارانی چت — Login screen, modern redesign
+   Every selector that the markup/JS relies on (#lay_pw, #lay_gender,
+   #admincon, .select/.tf-user/.tf-pass background icons, icomoon glyphs,
+   etc.) has been kept. Only visual treatment changed + made responsive.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --ink-950:#0b0620;
+  --ink-900:#180b34;
+  --ink-800:#241249;
+  --violet-600:#7c4dff;
+  --violet-500:#9a6bff;
+  --magenta-500:#c148c1;
+  --teal-400:#38d9b9;
+  --amber-400:#ffb648;
+  --glass-fill:rgba(255,255,255,.06);
+  --glass-fill-strong:rgba(255,255,255,.13);
+  --glass-border:rgba(255,255,255,.16);
+  --text-hi:#f7f4ff;
+  --text-mid:#cabbe9;
+  --text-dim:#9c8bc4;
+  --shadow-1:0 20px 60px -20px rgba(10,4,30,.65);
+  --radius-lg:26px;
+  --radius-md:16px;
+  --radius-sm:10px;
+}
+
+/* ---- legacy icon fonts kept exactly (glyphs used by .ico_pm / .pm2) ---- */
+@font-face{font-family:AGoogle;src:url('/theme/fonts/AGoogle.ttf') format('truetype'),url('/theme/fonts/AGoogle.eot?#') format('eot'),url('/theme/fonts/AGoogle.woff') format('woff');font-style:normal;font-weight:400}
+@font-face{font-family:AGoogle;src:url('/theme/fonts/AGoogle.eot');src:url('/theme/fonts/AGoogle.eot?#iefix') format('embedded-opentype'),url('/theme/fonts/AGoogle.woff') format('woff'),url('/theme/fonts/AGoogle.ttf') format('truetype'),url('/theme/fonts/AGoogle.svg#svgFontName') format('svg');font-style:normal;font-weight:400}
+@font-face{font-family:icomoon;src:url('/theme/fonts/icomoon.eot?-n2bcf6');src:url('/theme/fonts/icomoon.eot?#iefix-n2bcf6') format('embedded-opentype'),url('/theme/fonts/icomoon.woff?-n2bcf6') format('woff'),url('/theme/fonts/icomoon.ttf?-n2bcf6') format('truetype'),url('/theme/fonts/icomoon.svg?-n2bcf6#icomoon') format('svg');font-weight:400;font-style:normal}
+[class*=" icon-"],[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+*{box-sizing:border-box}
+body,ul{margin:0}
+:focus{outline:0}
+:focus-visible{outline:2px solid var(--teal-400);outline-offset:3px}
+
+a{text-decoration:none;color:var(--amber-400)}
+ul{padding:0;list-style:none}
+
+body{
+  font-family:"Vazirmatn",Yekan,Tahoma,sans-serif;
+  font-size:14px;
+  color:var(--text-mid);
+  min-height:100vh;
+  background:
+    radial-gradient(1200px 700px at 15% -10%, rgba(124,77,255,.35), transparent 60%),
+    radial-gradient(900px 600px at 110% 10%, rgba(56,217,185,.25), transparent 55%),
+    radial-gradient(1000px 800px at 50% 120%, rgba(193,72,193,.30), transparent 60%),
+    linear-gradient(160deg, var(--ink-950), var(--ink-900) 45%, var(--ink-800));
+  background-attachment:fixed;
+  position:relative;
+  overflow-x:hidden;
+  padding:24px 0 40px;
+}
+
+/* signature: soft drifting rain streaks, nodding to "بارانی" (rainy) */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:repeating-linear-gradient(
+    115deg,
+    rgba(255,255,255,.05) 0px,
+    rgba(255,255,255,.05) 1px,
+    transparent 1px,
+    transparent 90px
+  );
+  background-size:140% 140%;
+  animation:rainDrift 14s linear infinite;
+  opacity:.5;
+  z-index:0;
+}
+@keyframes rainDrift{
+  0%{background-position:0 0}
+  100%{background-position:-300px 420px}
+}
+@media (prefers-reduced-motion: reduce){
+  body::before{animation:none}
+}
+
+/* ---------------------------------------------------------------------- */
+/* Main card                                                              */
+/* ---------------------------------------------------------------------- */
+.main{
+  position:relative;
+  z-index:1;
+  width:min(920px, 94vw);
+  height:auto;
+  margin:15px auto auto;
+  padding:22px;
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius-lg);
+  background:var(--glass-fill);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:var(--shadow-1);
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  grid-template-areas:
+    "banner banner"
+    "visual formhead"
+    "visual formbody"
+    "divider divider"
+    "links links"
+    "telegram telegram";
+  gap:14px 22px;
+}
+
+.main > .pm{ grid-area:banner; }
+.main > .pic{ grid-area:visual; }
+.main > .box{ grid-area:formhead; }
+.main > .inner{ grid-area:formbody; }
+.main > hr.line{ grid-area:divider; }
+.main > .link{ grid-area:links; }
+.main > a.telegram{ grid-area:telegram; }
+
+/* ---- announcement banner ---- */
+.ico_pm,.pm{float:none}
+.pm{
+  width:100%;
+  height:auto;
+  min-height:44px;
+  margin-bottom:0;
+  padding:12px 18px;
+  color:var(--text-hi);
+  background:linear-gradient(to right, var(--teal-400), var(--magenta-500));
+  font-size:15px;
+  line-height:1.6;
+  text-shadow:0 1px 2px rgba(0,0,0,.2);
+  border-top:none;
+  border-radius:var(--radius-md);
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+.ico_pm{
+  font:20px icomoon;
+  color:#fff;
+  top:0;
+  position:relative;
+}
+.ico_pm::before{content:"\e6e5"}
+.pm2::before{content:"\e6e6"}
+
+/* ---- visual / brand panel ---- */
+.pic{
+  background:url(../images/cyrus.jpg) center/cover no-repeat;
+  width:100%;
+  height:100%;
+  min-height:280px;
+  border-radius:var(--radius-md);
+  position:relative;
+  overflow:hidden;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.08), inset 0 -60px 70px -10px rgba(11,6,32,.75);
+}
+.pic::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(11,6,32,.55), transparent 55%);
+}
+
+/* ---- login sub-headline + card body ---- */
+.box{
+  width:auto;
+  max-height:none;
+  float:none;
+}
+.login{
+  width:auto;
+  float:none;
+  color:var(--text-hi);
+  font-size:15px;
+  line-height:1.7;
+  text-shadow:none;
+  height:auto;
+  padding:12px 16px;
+  background:var(--glass-fill-strong);
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius-md);
+  margin-right:0;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  text-align:right;
+}
+
+.inner{
+  margin:0;
+  color:var(--text-hi);
+  font-size:15px;
+  text-align:center;
+}
+
+.inner form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* ---- inputs ---- */
+.select,.tf-pass,.tf-user{
+  width:100%;
+  direction:rtl;
+  font-family:inherit;
+}
+
+.tf-user,.tf-pass{
+  background:url(../images/5456.png) right 12px center no-repeat rgba(255,255,255,.9);
+  height:46px;
+  border-radius:var(--radius-sm);
+  border:1px solid transparent;
+  padding:0 42px 0 14px;
+  text-align:right;
+  color:#241249;
+  text-shadow:none;
+  font-size:15px;
+  transition:border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.tf-user:focus,.tf-pass:focus{
+  border-color:var(--teal-400);
+  box-shadow:0 0 0 4px rgba(56,217,185,.25);
+  background-color:#fff;
+}
+.tf-pass{
+  background:url(../images/p.png) right 12px center no-repeat rgba(255,255,255,.9);
+}
+
+.select{
+  background:url(../images/d.png) right 12px center no-repeat rgba(255,255,255,.9);
+  height:46px;
+  border-radius:var(--radius-sm);
+  border:1px solid transparent;
+  font-size:15px;
+  color:#241249;
+  padding-right:40px;
+  cursor:pointer;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+.select:focus{
+  border-color:var(--teal-400);
+  box-shadow:0 0 0 4px rgba(56,217,185,.25);
+}
+
+#lay_pw,#lay_security_question,#lay_hide,#lay_gender{
+  width:100%;
+}
+
+.hide{
+  color:var(--text-mid);
+  font-size:13px;
+}
+
+hr.line{
+  top:0;
+  position:relative;
+  border:none;
+  border-top:1px dashed var(--glass-border);
+  width:100%;
+  margin:0;
+}
+
+/* ---- submit button ---- */
+.btn{
+  cursor:pointer;
+  background:linear-gradient(to right, var(--violet-600), var(--magenta-500));
+  border:1px solid rgba(255,255,255,.35);
+  font-family:inherit;
+  position:relative;
+  height:46px;
+  width:100%;
+  border-radius:var(--radius-sm);
+  padding:0 25px;
+  font-size:16px;
+  font-weight:600;
+  color:#fff;
+  letter-spacing:.3px;
+  transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow:0 10px 25px -8px rgba(124,77,255,.65);
+}
+.btn:hover{
+  background:linear-gradient(to right, var(--violet-500), var(--magenta-500));
+  transform:translateY(-1px);
+  box-shadow:0 14px 30px -8px rgba(124,77,255,.8);
+  color:#fff;
+}
+.btn:active{ transform:translateY(0); }
+
+/* ---- register / forgot-password links ---- */
+.link{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  float:none;
+  text-align:center;
+}
+.link a{
+  display:block;
+  text-align:center;
+  background:var(--glass-fill-strong);
+  margin-bottom:0;
+  padding:10px 12px;
+  height:auto;
+  border-radius:var(--radius-sm);
+  border-top:none;
+  border-right:3px solid var(--teal-400);
+  color:var(--text-hi);
+  font-size:14px;
+  transition:background .2s ease, transform .15s ease;
+  -webkit-transition:.2s ease-in;
+  -o-transition:.2s ease-in;
+  -ms-transition:.2s ease-in;
+}
+.link a:hover{
+  background:rgba(255,255,255,.16);
+  transform:translateY(-1px);
+}
+
+/* ---- telegram cta ---- */
+.telegram{
+  display:block;
+  margin:0 auto;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  width:min(260px, 100%);
+  box-shadow:0 10px 25px -10px rgba(0,0,0,.5);
+  transition:transform .15s ease, box-shadow .2s ease;
+}
+.telegram img{ display:block; width:100%; height:auto; }
+.telegram:hover{
+  border-radius:var(--radius-md);
+  cursor:pointer;
+  transform:translateY(-2px);
+  box-shadow:0 16px 32px -10px rgba(0,0,0,.6);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Menu / online-count strip                                              */
+/* ---------------------------------------------------------------------- */
+.menu{
+  width:min(920px, 94vw);
+  height:auto;
+  margin:14px auto 0;
+  border-bottom:none;
+  padding:10px 16px;
+  background:var(--glass-fill);
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius-md);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+  position:relative;
+  z-index:1;
+}
+.menu ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.menu ul li{
+  display:inline-flex;
+  margin:0;
+  padding:6px 14px;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  font-size:14px;
+  line-height:1.4;
+}
+.menu ul li a{ color:var(--text-hi); }
+.menu ul li a:hover{ color:var(--teal-400); }
+
+span.on{
+  float:none;
+  padding:6px 14px;
+  border-radius:999px;
+  background:rgba(56,217,185,.18)!important;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--text-hi);
+}
+span.on2{
+  color:var(--text-hi);
+  line-height:1.6;
+  background:rgba(56,217,185,.18)!important;
+  font-family:inherit;
+  border-radius:999px;
+  border:1px solid var(--glass-border);
+  padding:8px 16px;
+  display:inline-block;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Footer                                                                 */
+/* ---------------------------------------------------------------------- */
+.footer{
+  height:auto;
+  clear:both;
+  width:min(920px, 94vw);
+  margin:16px auto 5px;
+  padding:14px 16px;
+  border-top:none;
+  border-radius:var(--radius-md);
+  font-family:inherit;
+  background:var(--glass-fill);
+  border:1px solid var(--glass-border);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  text-align:center;
+  position:relative;
+  z-index:1;
+}
+.error{
+  position:relative;
+  top:0;
+  color:var(--text-dim);
+  font-size:12.5px;
+  float:none;
+}
+.cop{ float:none; left:auto; }
+
+#admincon{visibility:hidden}
+
+/* ---------------------------------------------------------------------- */
+/* Mobile ( <= 760px )                                                    */
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width:760px){
+  body{ padding:14px 0 28px; }
+
+  .main{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "banner"
+      "visual"
+      "formhead"
+      "formbody"
+      "divider"
+      "links"
+      "telegram";
+    width:92vw;
+    padding:16px;
+    gap:12px;
+  }
+
+  .pic{ min-height:170px; }
+
+  .pm{ font-size:13.5px; padding:10px 14px; }
+
+  .login{ font-size:14px; }
+
+  .menu{ display:none; }
+
+  .footer{ display:none; }
+
+  #admincon{ visibility:visible; }
+
+  span.on2{ display:inline-block; margin-top:4px; }
+}
+
+@media screen and (max-width:380px){
+  .main{ padding:12px; }
+  .pic{ min-height:130px; }
+  .btn{ font-size:15px; }
+}

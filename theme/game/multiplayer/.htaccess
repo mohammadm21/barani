@@ -1,0 +1,11 @@
+Options +FollowSymLinks  
+RewriteEngine On  
+
+
+RewriteRule ^game.js game.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?game=$1

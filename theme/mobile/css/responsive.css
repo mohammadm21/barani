@@ -1,0 +1,40 @@
+@media (max-width:256px) {
+body{padding-top:140px}
+#title{height:120px}
+#title a.logo{width:100%;text-align:center}
+.settingsd .settingbtn{display:none}
+.normal .user_online .user_right{width:88px}
+.normal .user_online .user_icons span.user_gender{display:inline}
+.normal .user_online .user_icons img.user_gender{display:none}
+.normal .user_online .user_icons span.user_gender:after{content:" - ";color:silver}
+.normal .user_online .user_icons span.user_type{display:inline}
+.normal .user_online .user_icons img.user_type{display:none}
+.normal .user_online ul.user_actions{float:right;padding:5px;margin-bottom:0 auto}
+.sendmsg .formrow input[type="text"]{width:100%}
+.notifications{width:200px}
+.notifications li .drop-down-wrapper li a .time{display:none}
+}
+@media (min-width:257px) and (max-width:300px) {
+#title a.logo{padding-right:5px;padding-left:0;font-size:22px}
+#title ul.tools{padding-left:5px;padding-right:0}
+.normal .user_online .user_right{width:100px}
+.normal .user_online ul.user_actions{float:none;margin-top:-5px;padding-left:0;padding-right:0;width:auto}
+.sendmsg .formrow input[type="text"]{width:100px}
+.sendmsg .backbtn{font-size:15px;margin-top:7px}
+}
+@media (min-width:257px) and (max-width:275px) {
+.notifications{width:220px}
+}
+@media (min-width:275px) and (max-width:300px) {
+.notifications{width:250px}
+}
+@media (min-width:301px) and (max-width:356px) {
+.notifications{width:280px}
+}
+@media (min-width:301px) and (max-width:416px) {
+.normal .user_online .user_right{width:auto}
+.normal .user_online ul.user_actions{width:auto;padding-left:0;padding-right:0}
+.panel-heading{padding:10px 40px 0 0}
+.panel-heading > [class*=" fa-"]{padding:12px 10px 0}
+.sendmsg .formrow input[type="text"]{width:130px}
+}

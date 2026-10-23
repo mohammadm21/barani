@@ -1,0 +1,18 @@
+.overlay_TarhPardaz_win{-moz-opacity:0.6;background-color:#f6f6ff;filter:alpha(opacity=60);opacity:0.6}
+.TarhPardaz_win_nw{height:18px;width:10px}
+.TarhPardaz_win_n{padding: 0 0 0 10px !important;width: 100%;}
+.TarhPardaz_win_ne{height:18px;width:10px}
+.TarhPardaz_win_w{width:10px}
+.TarhPardaz_win_e{width:10px}
+.TarhPardaz_win_sw{height:3px;width:10px}
+.TarhPardaz_win_s{}
+.TarhPardaz_win_se,.TarhPardaz_win_sizer{border-bottom:2px solid #323232;border-right:2px solid #323232;height:5px;width:5px}
+.TarhPardaz_win_sizer{height: 5px;width: 5px;cursor:se-resize !important}
+.TarhPardaz_win_close{background:transparent url(style8img/button-close-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:11px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_minimize{background:transparent url(style8img/button-min-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:55px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_maximize{background:transparent url(style8img/button-max-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:33px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_title{direction:rtl;font-family:Byekan;font-size:10px;color:#616161;float:left;font-weight:700;height:17px;margin-top:0px;text-align:center;width:100%}
+.TarhPardaz_win_content{color:#000;font-size:9pt;overflow:auto;padding-top:5px}
+.top.table_window {background: rgba(100, 250, 250, 0.3);border: 1px solid #a8a8a8;border-bottom: 2px solid #c2c2c2;border-radius: 5px 5px 0 0;border-collapse: inherit !important}
+.mid.table_window {background: rgba(250, 225, 200, 0.3);border: 1px solid #a8a8a8;border-bottom-width:0;border-top-width:0}
+.bot.table_window {background: rgba(250, 225, 200, 0.3);border: 1px solid #a8a8a8;border-top-width:0}

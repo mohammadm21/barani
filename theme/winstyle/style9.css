@@ -1,0 +1,15 @@
+.overlay_TarhPardaz_win{-moz-opacity:0.6;background-color:#f6f6ff;filter:alpha(opacity=60);opacity:0.6}
+.TarhPardaz_win_nw{background-color:#BEE9FF;border-bottom:1px solid #88e;border-left:1px solid #2C299B;border-top:1px solid #2C299B;height:18px;width:10px}
+.TarhPardaz_win_n{background-color:#BEE9FF;border-bottom:1px solid #88e;border-top:1px solid #2C299B}
+.TarhPardaz_win_ne{background-color:#BEE9FF;border-bottom:1px solid #88e;border-right:1px solid #2C299B;border-top:1px solid #2C299B;height:18px;width:10px}
+.TarhPardaz_win_w{background-color:#f6f6ff;border-left:1px solid #2C299B;width:10px}
+.TarhPardaz_win_e{background-color:#f6f6ff;border-right:1px solid #2C299B;width:10px}
+.TarhPardaz_win_sw{background-color:#f6f6ff;border-bottom:1px solid #2C299B;border-left:1px solid #2C299B;height:3px;width:10px}
+.TarhPardaz_win_s{background-color:#f6f6ff;border-bottom:1px solid #2C299B}
+.TarhPardaz_win_se,.etchat_blue_sizer{background-color:#f6f6ff;border-bottom:1px solid #2C299B;border-right:1px solid #2C299B;height:3px;width:10px}
+.TarhPardaz_win_sizer{background-color: #f6f6ff;border-bottom: 1px solid #2c299b;border-right: 1px solid #2c299b;height: 3px;width: 10px;cursor:se-resize !important}
+.TarhPardaz_win_close{background:transparent url(style9img/button-close-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:11px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_minimize{background:transparent url(style9img/button-min-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:55px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_maximize{background:transparent url(style9img/button-max-focus.gif) no-repeat 0 0;cursor:pointer;height:23px;position:absolute;right:33px;top:0;width:23px;z-index:1000}
+.TarhPardaz_win_title{color:#669;float:center;font-size:10px;font-weight:700;height:14px;margin-top:2px;text-align:center;width:100%}
+.TarhPardaz_win_content{color:#000;font-size:9pt;overflow:auto;padding-top:5px}

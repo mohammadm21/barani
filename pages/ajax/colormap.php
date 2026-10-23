@@ -1,0 +1,272 @@
+<?php
+
+if(session('id') == 12458)
+{
+ die('شما اجازه استفاده از فونت را ندارید. بوس'); 
+}
+
+$el3 = giu('el3');
+if ($el3 == 'classic') {
+    $font = (session('fontname') ? session('fontname') : $options['chat_defaultfontname']);
+    $size = (session('fontsize') ? session('fontsize') : $options['chat_defaultfontsize']);
+    ?>
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table border="0" width="180" style="font-size:10px" cellspacing="0" cellpadding="0" id="farben_tab">
+                    <tr>
+                        <td colspan="2">
+                            <table border="0" width="180" style="font-size:10px" cellspacing="2" cellpadding="0">
+                                <tr>
+                                    <td style="background-color:#000000" width="30"><div class="colorpick" id="000000_b">&nbsp;</div></td>
+                                    <td style="background-color:#0000ff" width="30"><div class="colorpick" id="0000ff_b">&nbsp;</div></td>
+                                    <td style="background-color:#00ff00" width="30"><div class="colorpick" id="00ff00_b">&nbsp;</div></td>
+                                    <td style="background-color:#ff0000" width="30"><div class="colorpick" id="ff0000_b">&nbsp;</div></td>
+                                    <td style="background-color:#ffff00" width="30"><div class="colorpick" id="ffff00_b">&nbsp;</div></td>
+                                    <td style="background-color:#ffffff" width="30"><div class="colorpick" id="ffffff_b">&nbsp;</div></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" width="90" style="font-size:10px" cellspacing="2" cellpadding="0">
+                                <tr>
+                                    <td style="background-color:#003300" width="15"><div class="colorpick" id="003300">&nbsp;</div></td>
+                                    <td style="background-color:#003333" width="15"><div class="colorpick" id="003333">&nbsp;</div></td>
+                                    <td style="background-color:#003366" width="15"><div class="colorpick" id="003366">&nbsp;</div></td>
+                                    <td style="background-color:#003399" width="15"><div class="colorpick" id="003399">&nbsp;</div></td>
+                                    <td style="background-color:#0033cc" width="15"><div class="colorpick" id="0033cc">&nbsp;</div></td>
+                                    <td style="background-color:#0033ff" width="15"><div class="colorpick" id="0033ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#006600" width="15"><div class="colorpick" id="006600">&nbsp;</div></td>
+                                    <td style="background-color:#006633" width="15"><div class="colorpick" id="006633">&nbsp;</div></td>
+                                    <td style="background-color:#006666" width="15"><div class="colorpick" id="006666">&nbsp;</div></td>
+                                    <td style="background-color:#006699" width="15"><div class="colorpick" id="006699">&nbsp;</div></td>
+                                    <td style="background-color:#0066cc" width="15"><div class="colorpick" id="0066cc">&nbsp;</div></td>
+                                    <td style="background-color:#0066ff" width="15"><div class="colorpick" id="0066ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#009900" width="15"><div class="colorpick" id="009900">&nbsp;</div></td>
+                                    <td style="background-color:#009933" width="15"><div class="colorpick" id="009933">&nbsp;</div></td>
+                                    <td style="background-color:#009966" width="15"><div class="colorpick" id="009966">&nbsp;</div></td>
+                                    <td style="background-color:#009999" width="15"><div class="colorpick" id="009999">&nbsp;</div></td>
+                                    <td style="background-color:#0099cc" width="15"><div class="colorpick" id="0099cc">&nbsp;</div></td>
+                                    <td style="background-color:#0099ff" width="15"><div class="colorpick" id="0099ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#00cc00" width="15"><div class="colorpick" id="00cc00">&nbsp;</div></td>
+                                    <td style="background-color:#00cc33" width="15"><div class="colorpick" id="00cc33">&nbsp;</div></td>
+                                    <td style="background-color:#00cc66" width="15"><div class="colorpick" id="00cc66">&nbsp;</div></td>
+                                    <td style="background-color:#00cc99" width="15"><div class="colorpick" id="00cc99">&nbsp;</div></td>
+                                    <td style="background-color:#00cccc" width="15"><div class="colorpick" id="00cccc">&nbsp;</div></td>
+                                    <td style="background-color:#00ccff" width="15"><div class="colorpick" id="00ccff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#00ff00" width="15"><div class="colorpick" id="00ff00">&nbsp;</div></td>
+                                    <td style="background-color:#00ff33" width="15"><div class="colorpick" id="00ff33">&nbsp;</div></td>
+                                    <td style="background-color:#00ff66" width="15"><div class="colorpick" id="00ff66">&nbsp;</div></td>
+                                    <td style="background-color:#00ff99" width="15"><div class="colorpick" id="00ff99">&nbsp;</div></td>
+                                    <td style="background-color:#00ffcc" width="15"><div class="colorpick" id="00ffcc">&nbsp;</div></td>
+                                    <td style="background-color:#00ffff" width="15"><div class="colorpick" id="00ffff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#663300" width="15"><div class="colorpick" id="663300">&nbsp;</div></td>
+                                    <td style="background-color:#663333" width="15"><div class="colorpick" id="663333">&nbsp;</div></td>
+                                    <td style="background-color:#663366" width="15"><div class="colorpick" id="663366">&nbsp;</div></td>
+                                    <td style="background-color:#663399" width="15"><div class="colorpick" id="663399">&nbsp;</div></td>
+                                    <td style="background-color:#6633cc" width="15"><div class="colorpick" id="6633cc">&nbsp;</div></td>
+                                    <td style="background-color:#6633ff" width="15"><div class="colorpick" id="6633ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#666600" width="15"><div class="colorpick" id="666600">&nbsp;</div></td>
+                                    <td style="background-color:#666633" width="15"><div class="colorpick" id="666633">&nbsp;</div></td>
+                                    <td style="background-color:#666666" width="15"><div class="colorpick" id="666666">&nbsp;</div></td>
+                                    <td style="background-color:#666699" width="15"><div class="colorpick" id="666699">&nbsp;</div></td>
+                                    <td style="background-color:#6666cc" width="15"><div class="colorpick" id="6666cc">&nbsp;</div></td>
+                                    <td style="background-color:#6666ff" width="15"><div class="colorpick" id="6666ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#339900" width="15"><div class="colorpick" id="339900">&nbsp;</div></td>
+                                    <td style="background-color:#339933" width="15"><div class="colorpick" id="339933">&nbsp;</div></td>
+                                    <td style="background-color:#339966" width="15"><div class="colorpick" id="339966">&nbsp;</div></td>
+                                    <td style="background-color:#339999" width="15"><div class="colorpick" id="339999">&nbsp;</div></td>
+                                    <td style="background-color:#3399cc" width="15"><div class="colorpick" id="3399cc">&nbsp;</div></td>
+                                    <td style="background-color:#3399ff" width="15"><div class="colorpick" id="3399ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#33cc00" width="15"><div class="colorpick" id="33cc00">&nbsp;</div></td>
+                                    <td style="background-color:#33cc33" width="15"><div class="colorpick" id="33cc33">&nbsp;</div></td>
+                                    <td style="background-color:#33cc66" width="15"><div class="colorpick" id="33cc66">&nbsp;</div></td>
+                                    <td style="background-color:#33cc99" width="15"><div class="colorpick" id="33cc99">&nbsp;</div></td>
+                                    <td style="background-color:#33cccc" width="15"><div class="colorpick" id="33cccc">&nbsp;</div></td>
+                                    <td style="background-color:#33ccff" width="15"><div class="colorpick" id="33ccff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#33ff00" width="15"><div class="colorpick" id="33ff00">&nbsp;</div></td>
+                                    <td style="background-color:#33ff33" width="15"><div class="colorpick" id="33ff33">&nbsp;</div></td>
+                                    <td style="background-color:#33ff66" width="15"><div class="colorpick" id="33ff66">&nbsp;</div></td>
+                                    <td style="background-color:#33ff99" width="15"><div class="colorpick" id="33ff99">&nbsp;</div></td>
+                                    <td style="background-color:#33ffcc" width="15"><div class="colorpick" id="33ffcc">&nbsp;</div></td>
+                                    <td style="background-color:#33ffff" width="15"><div class="colorpick" id="33ffff">&nbsp;</div></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="0" width="90" style="font-size:10px" cellspacing="2" cellpadding="0">
+                                <tr>
+                                    <td style="background-color:#cc3300" width="15"><div class="colorpick" id="cc3300">&nbsp;</div></td>
+                                    <td style="background-color:#cc3333" width="15"><div class="colorpick" id="cc3333">&nbsp;</div></td>
+                                    <td style="background-color:#cc3366" width="15"><div class="colorpick" id="cc3366">&nbsp;</div></td>
+                                    <td style="background-color:#cc3399" width="15"><div class="colorpick" id="cc3399">&nbsp;</div></td>
+                                    <td style="background-color:#cc33cc" width="15"><div class="colorpick" id="cc33cc">&nbsp;</div></td>
+                                    <td style="background-color:#cc33ff" width="15"><div class="colorpick" id="cc33ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#cc6600" width="15"><div class="colorpick" id="cc6600">&nbsp;</div></td>
+                                    <td style="background-color:#cc6633" width="15"><div class="colorpick" id="cc6633">&nbsp;</div></td>
+                                    <td style="background-color:#cc6666" width="15"><div class="colorpick" id="cc6666">&nbsp;</div></td>
+                                    <td style="background-color:#cc6699" width="15"><div class="colorpick" id="cc6699">&nbsp;</div></td>
+                                    <td style="background-color:#cc66cc" width="15"><div class="colorpick" id="cc66cc">&nbsp;</div></td>
+                                    <td style="background-color:#cc66ff" width="15"><div class="colorpick" id="cc66ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#cc9900" width="15"><div class="colorpick" id="cc9900">&nbsp;</div></td>
+                                    <td style="background-color:#cc9933" width="15"><div class="colorpick" id="cc9933">&nbsp;</div></td>
+                                    <td style="background-color:#cc9966" width="15"><div class="colorpick" id="cc9966">&nbsp;</div></td>
+                                    <td style="background-color:#cc9999" width="15"><div class="colorpick" id="cc9999">&nbsp;</div></td>
+                                    <td style="background-color:#cc99cc" width="15"><div class="colorpick" id="cc99cc">&nbsp;</div></td>
+                                    <td style="background-color:#cc99ff" width="15"><div class="colorpick" id="cc99ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#cccc00" width="15"><div class="colorpick" id="cccc00">&nbsp;</div></td>
+                                    <td style="background-color:#cccc33" width="15"><div class="colorpick" id="cccc33">&nbsp;</div></td>
+                                    <td style="background-color:#cccc66" width="15"><div class="colorpick" id="cccc66">&nbsp;</div></td>
+                                    <td style="background-color:#cccc99" width="15"><div class="colorpick" id="cccc99">&nbsp;</div></td>
+                                    <td style="background-color:#cccccc" width="15"><div class="colorpick" id="cccccc">&nbsp;</div></td>
+                                    <td style="background-color:#ccccff" width="15"><div class="colorpick" id="ccccff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ccff00" width="15"><div class="colorpick" id="ccff00">&nbsp;</div></td>
+                                    <td style="background-color:#ccff33" width="15"><div class="colorpick" id="ccff33">&nbsp;</div></td>
+                                    <td style="background-color:#ccff66" width="15"><div class="colorpick" id="ccff66">&nbsp;</div></td>
+                                    <td style="background-color:#ccff99" width="15"><div class="colorpick" id="ccff99">&nbsp;</div></td>
+                                    <td style="background-color:#ccffcc" width="15"><div class="colorpick" id="ccffcc">&nbsp;</div></td>
+                                    <td style="background-color:#ccffff" width="15"><div class="colorpick" id="ccffff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ff3300" width="15"><div class="colorpick" id="ff3300">&nbsp;</div></td>
+                                    <td style="background-color:#ff3333" width="15"><div class="colorpick" id="ff3333">&nbsp;</div></td>
+                                    <td style="background-color:#ff3366" width="15"><div class="colorpick" id="ff3366">&nbsp;</div></td>
+                                    <td style="background-color:#ff3399" width="15"><div class="colorpick" id="ff3399">&nbsp;</div></td>
+                                    <td style="background-color:#ff33cc" width="15"><div class="colorpick" id="ff33cc">&nbsp;</div></td>
+                                    <td style="background-color:#ff33ff" width="15"><div class="colorpick" id="ff33ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ff6600" width="15"><div class="colorpick" id="ff6600">&nbsp;</div></td>
+                                    <td style="background-color:#ff6633" width="15"><div class="colorpick" id="ff6633">&nbsp;</div></td>
+                                    <td style="background-color:#ff6666" width="15"><div class="colorpick" id="ff6666">&nbsp;</div></td>
+                                    <td style="background-color:#ff6699" width="15"><div class="colorpick" id="ff6699">&nbsp;</div></td>
+                                    <td style="background-color:#ff66cc" width="15"><div class="colorpick" id="ff66cc">&nbsp;</div></td>
+                                    <td style="background-color:#ff66ff" width="15"><div class="colorpick" id="ff66ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ff9900" width="15"><div class="colorpick" id="ff9900">&nbsp;</div></td>
+                                    <td style="background-color:#ff9933" width="15"><div class="colorpick" id="ff9933">&nbsp;</div></td>
+                                    <td style="background-color:#ff9966" width="15"><div class="colorpick" id="ff9966">&nbsp;</div></td>
+                                    <td style="background-color:#ff9999" width="15"><div class="colorpick" id="ff9999">&nbsp;</div></td>
+                                    <td style="background-color:#ff99cc" width="15"><div class="colorpick" id="ff99cc">&nbsp;</div></td>
+                                    <td style="background-color:#ff99ff" width="15"><div class="colorpick" id="ff99ff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ffcc00" width="15"><div class="colorpick" id="ffcc00">&nbsp;</div></td>
+                                    <td style="background-color:#ffcc33" width="15"><div class="colorpick" id="ffcc33">&nbsp;</div></td>
+                                    <td style="background-color:#ffcc66" width="15"><div class="colorpick" id="ffcc66">&nbsp;</div></td>
+                                    <td style="background-color:#ffcc99" width="15"><div class="colorpick" id="ffcc99">&nbsp;</div></td>
+                                    <td style="background-color:#ffcccc" width="15"><div class="colorpick" id="ffcccc">&nbsp;</div></td>
+                                    <td style="background-color:#ffccff" width="15"><div class="colorpick" id="ffccff">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:#ffff00" width="15"><div class="colorpick" id="ffff00">&nbsp;</div></td>
+                                    <td style="background-color:#ffff33" width="15"><div class="colorpick" id="ffff33">&nbsp;</div></td>
+                                    <td style="background-color:#ffff66" width="15"><div class="colorpick" id="ffff66">&nbsp;</div></td>
+                                    <td style="background-color:#ffff99" width="15"><div class="colorpick" id="ffff99">&nbsp;</div></td>
+                                    <td style="background-color:#ffffcc" width="15"><div class="colorpick" id="ffffcc">&nbsp;</div></td>
+                                    <td style="background-color:#ffffff" width="15"><div class="colorpick" id="ffffff">&nbsp;</div></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;&nbsp;</td>
+            <td valign="top">
+        <center>
+            <table border="3" style="border-radius:2px" width="35" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <div id="farbenvorschau" style="width:100px;height:15px;border:1px solid black;background-color:#<?php echo($options['chat_defaultcolor']); ?>"></div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <div dir="rtl">
+            <table>
+                <?php if ($options['enablechatfont'] == 'true') { ?> 
+                    <tr>
+                        <td> نـوع قـلـم :</td>
+                        <td>
+                            <select  id="fontname" name = "fontname">
+                                <option value="tahoma"<?php echo ($font == 'tahoma' ? 'selected="selected"' : '') ?>>مـعـمـولـي</option>
+                                <option value="yekan"<?php echo ($font == 'yekan' ? 'selected="selected"' : '') ?>>B Yekan</option>
+                                <option value="morvarid"<?php echo ($font == 'morvarid' ? 'selected="selected"' : '') ?>>B Morvarid</option>
+                                <option value="ziba"<?php echo ($font == 'ziba' ? 'selected="selected"' : '') ?>>B Ziba</option>
+                                <option value="sina"<?php echo ($font == 'sina' ? 'selected="selected"' : '') ?>>B Sina</option>
+                                <option value="narm"<?php echo ($font == 'narm' ? 'selected="selected"' : '') ?>>B Narm</option>
+                                <option value="titr"<?php echo ($font == 'titr' ? 'selected="selected"' : '') ?>>B Tir</option>
+                                <option value="koodak"<?php echo ($font == 'koodak' ? 'selected="selected"' : '') ?>>B Koodak</option>
+                                <option value="Yekp"<?php echo ($font == 'Yekp' ? 'selected="selected"' : '') ?>>Yekp</option>
+                                <option value="myriadarabicregular"<?php echo ($font == 'myriadarabicregular' ? 'selected="selected"' : '') ?>>خوشکل</option>
+                                <?php
+                                $sql->orderBy("id", 'DESC');
+                                foreach($sql->get('chatfonts', null, array('id', 'name')) as $fonts){
+                                    ?>
+                                    <option value="<?php echo("dcfont-" . $fonts['id']); ?>"<?php echo ($font == "dcfont-" . $fonts['id'] ? 'selected="selected"' : '') ?>><?php echo($fonts['name']); ?></option>
+                                    <?php
+                                }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>اندازه قلم :</td>
+                        <td>
+                            <select id="fontsize" name="fontsize">
+                                <option value="13px"<?php echo ($size == '13px' ? 'selected="selected"' : '') ?>>مـعـمـولـي</option>
+                                <option value="14px"<?php echo ($size == '14px' ? 'selected="selected"' : '') ?>>14</option>
+                                <option value="15px"<?php echo ($size == '15px' ? 'selected="selected"' : '') ?>>15</option>
+                                <option value="16px"<?php echo ($size == '16px' ? 'selected="selected"' : '') ?>>16</option>
+                                <option value="17px"<?php echo ($size == '17px' ? 'selected="selected"' : '') ?>>17</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <?php
+                }
+                ?>
+                <tr>
+                    <td><input type="Checkbox" id="kursiv"> <label for="kursiv"><i>مورب</i></label></td>
+                    <td><input type="Checkbox" <?php if(session('bold'))echo('checked');?> id="fett"> <label for="fett"><b>ضخیم</b></label></td>
+                </tr>
+            </table>
+            <strong>مدیریت رنگ:</strong>
+        </div>
+        <div id="track_red" style="width:140px;background-color:#ddd;height:6px;font-size:8px;margin-top:10px"><div id="handle_red" style="width:8px;height:10px;background-color:#f00;cursor:e-resize;border:1px solid black"></div></div>
+        <div id="track_green" style="width:140px;background-color:#ddd;height:6px;font-size:8px;margin-top:10px"><div id="handle_green" style="width:8px;height:10px;background-color:#0f0;cursor:e-resize;border:1px solid black"></div></div>
+        <div id="track_blue" style="width:140px;background-color:#ddd;height:6px;font-size:8px;margin-top:10px"><div id="handle_blue" style="width:8px;height:10px;background-color:#00f;cursor:e-resize;border:1px solid black"></div></div>
+    </td>
+    </tr>
+    </table>
+    <?php
+}

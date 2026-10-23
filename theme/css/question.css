@@ -1,0 +1,80 @@
+.question_modals {
+	background: #fff none repeat scroll 0 0;
+	border: 0 solid;
+	border-radius: 5px;
+	font-family: B Yekan;
+	overflow: hidden;
+	padding: 20px 30px 10px;
+	position: relative;
+	width: 600px;
+	margin: 100px auto;
+	margin-top: 0px;
+	direction: rtl;
+}
+.question_modals .question_span {
+	display: block;
+	float: right;
+	text-align: right;
+	width: 187px;
+	margin-top: 5px;
+	margin-left: 2px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.question_modals label {
+	display: block;
+	margin: 10px 0;
+}
+.question_modals #body	{
+	background: #d5d9e0 none repeat scroll 0 0;
+	border-radius: 3px;
+	margin: 10px -25px 30px;
+	padding: 10px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+.question_modals #header	{
+	background: #f1f1f1 none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #888888;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin: -15px -25px 0;
+	padding: 10px;
+}
+.question_modals #footer	{
+	background: #f1f1f1 none repeat scroll 0 0;
+	border-radius: 3px;
+	font-size: 15px;
+	margin: -15px -25px 0;
+	padding: 10px;
+}
+.question_modals .question_btn {
+	border: 0 none;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	height: 40px;
+	font-size: 20px;
+	margin-left: -11px;
+	margin-top: 12px;
+	transition: all 0.17s ease 0s;
+	width: 120px;
+}
+.question_modals #my_question {
+	margin-top: 5px;
+}
+.question_modals #question_timer {
+	color:red;
+	margin-top: 5px;
+}
+.question_modals input[type=radio] {
+	margin-right: 5px;
+}
+.question_modals #send {
+	float: left;
+}
+.question_modals #cancell {
+	float: right;
+}

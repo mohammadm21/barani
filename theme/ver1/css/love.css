@@ -1,0 +1,6 @@
+input[type=text]{background-color:#F6D1E9;border:2px solid #EB81CE;border-radius:7px;color:#666;font-family:Impact;font-size:26pt;padding:10px 5px;text-align:center;width:300px}
+input[type=text]:focus{-moz-transition:border .7s;-o-transition:border .7s;-webkit-transition:border .7s;border:2px solid #C21F96;color:#000;transition:border .7s}
+input[type=submit]{background-color:transparent;background-image:url(../images/love/submit.png);border:0;cursor:pointer;height:45px;width:98px}
+input[type=submit]:focus{margin-top:2px}
+#result{font-family:Impact;font-size:56pt;margin-bottom:20px;margin-top:20px}
+body{background-image:url(../images/love/bg.gif); margin-top:50px; margin:0px}

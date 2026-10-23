@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding:0;
+    background: url(../images/users.bg.jpg) repeat-x scroll 0 128px #fff;
+    direction: rtl;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+small{color:#666;font-size:10px;direction:rtl;}
+h1{font-size:32px;direction:rtl;margin:0;}
+h2{font-size:18px;direction:rtl;margin:0;}
+h3{font-size:13px;direction:rtl;margin:0;}
+a,a:visited{text-decoration:none;}
+a:hover{color:#c00;text-shadow:#060 0 0 5px;}
+#head{
+    background: url(../images/users.bg-head.png) repeat-x;
+    height: 128px;
+    width: 100%;
+}
+#head-counteiner{
+    width: 670px;
+    margin:0 auto;
+    position: relative;
+}
+#logotop{
+    width: 474px;
+    height: 108px;
+    background: url(../images/users.logo.png);
+    display: block;
+    float: left;
+    margin:-100px 0 0;
+}
+#box{
+    width: 900px;
+    margin:-10px auto 0;
+    position: relative;
+    box-shadow: 0 0 15px 5px #4b4b4b;
+    min-height: 200px;
+    border-radius: 10px;
+    background: url(../images/shadow.png);
+    
+}
+#box2{
+    padding:30px 0;
+}
+#box3{
+    width:850px;
+    min-height:150px;
+    border:1px solid #fcfcfc;
+    background:url(../images/bg-profile.png);
+    border-radius:5px;
+    text-align:justify;
+    margin:0 auto;
+}
+#box4{
+    background: #cae5bb;
+    width: 350px;
+    margin:0 auto 20px;
+    padding: 5px 0;
+}

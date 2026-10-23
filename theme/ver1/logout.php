@@ -1,0 +1,1 @@
+<?php header::Go(url('login')); ?>

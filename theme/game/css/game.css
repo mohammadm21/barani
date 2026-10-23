@@ -1,0 +1,8 @@
+body{
+    direction: rtl;
+    margin:0;
+    padding:0;
+    background: url(../images/wood_pattern.jpg) repeat;
+    font-family: Tahoma;
+    font-size: 12px;
+}

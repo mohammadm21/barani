@@ -1,0 +1,43 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-family:Rezvan;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;font-family:Rezvan;}
+*{font-family:Rezvan;}
+ol,ul{font-family:Rezvan;list-style:none;margin:0;padding:0}
+blockquote,q{font-family:Rezvan;quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{font-family:Rezvan;content:'';content:none}
+table{font-family:Rezvan;border-collapse:collapse;border-spacing:0}
+a{font-family:Rezvan;text-decoration:none}
+.txt-rt{font-family:Rezvan;text-align:right}
+.txt-lt{font-family:Rezvan;text-align:left}
+.txt-center{font-family:Rezvan;text-align:center}
+.float-rt{font-family:Rezvan;float:right}
+.float-lt{font-family:Rezvan;float:left}
+.clear{font-family:Rezvan;clear:both}
+.pos-relative{font-family:Rezvan;position:relative}
+.pos-absolute{font-family:Rezvan;position:absolute}
+.vertical-base{font-family:Rezvan;vertical-align:baseline}
+.vertical-top{font-family:Rezvan;vertical-align:top}
+nav.vertical ul li{font-family:Rezvan;display:block}
+nav.horizontal ul li{font-family:Rezvan;display:inline-block}
+img{font-family:Rezvan;max-width:100%}
+body{font-family:Rezvan;background:url(../images/bg1.jpg) no-repeat 0 0;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;min-height:auto}
+.wrap{margin:0 auto;width:80%}
+body a,form li,input[type="submit"],input[type="text"],.sixth-login input[type="submit"],.third-login input[type="submit"]{transition:0.1s all;-webkit-transition:0.1s all;-moz-transition:0.1s all;-o-transition:0.1s all}
+.close{background:url('../images/close.png') no-repeat 0 0;cursor:pointer;width:20px;height:20px;position:absolute;left:20px;top:20px;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}
+h1{direction:rtl;text-align:center;padding-top:10px;font-weight:400;color:#fff;font-size:17px}
+.login-form{background:rgba(107, 107, 156, 0.87);position:relative;width:30%;margin:4% auto 0 auto;text-align:center;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-o-border-radius:15px}
+.head img{width:100%}
+.avtar img{margin:2em 0 0}
+.head-info{padding:5px 0;text-align:center;font-weight:600;font-size:2em;color:#fff;background:#23232e;height:50px;border-top-left-radius:10px;-webkit-border-top-left-radius:10px;-moz-border-top-left-radius:10px;-o-border-top-left-radius:10px;border-top-right-radius:10px;-webkit-border-top-right-radius:10px;-moz-border-top-right-radius:10px;-o-border-top-right-radius:10p}
+input[type="text"]{width:70%;padding:0em 1em 1em 3em;color:#9199aa;font-size:18px;outline:none;background:transparent;border:none;font-weight:100;border-bottom:1px solid#484856}
+input[type="password"]{width:70%;padding:0em 1em 1em 3em;color:#9199AA;font-size:18px;outline:none;background:transparent;border:none;font-weight:100;border-bottom:1px solid#484856;margin-bottom:8px}
+.key{background:url(../images/pass.png) no-repeat 25px 17px}
+input[type="submit"]{font-size:30px;color:#fff;outline:none;border:none;background:#3ea751;width:100%;padding:18px 0;border-bottom-left-radius:15px;-webkit-border-bottom-left-radius:15px;-moz-border-bottom-left-radius:15px;-o-border-bottom-left-radius:15px;border-bottom-right-radius:15px;-webkit-border-bottom-right-radius:15px;-moz-border-bottom-right-radius:15px;-o-border-bottom-right-radius:15px;cursor:pointer}
+input[type="submit"]:hover{background:#ff2775;border-bottom-left-radius:15px;-webkit-border-bottom-left-radius:15px;-moz-border-bottom-left-radius:15px;-o-border-bottom-left-radius:15px;border-bottom-right-radius:15px;-webkit-border-bottom-right-radius:15px;-moz-border-bottom-right-radius:15px;-o-border-bottom-right-radius:15px;transition:1s all;-webkit-transition:1s all;-moz-transition:1s all;-o-transition:1s all}
+label.lbl-1{background:#6756ea;width:20px;height:20px;display:block;float:right;border-radius:50%;margin:16px 10px 0 0}
+label.lbl-2{background:#ea569a;width:20px;height:20px;display:block;float:right;border-radius:50%;margin:16px 10px 0 0}
+label.lbl-3{background:#f1c85f;width:20px;height:20px;display:block;float:right;border-radius:50%;margin:16px 10px 0 0}
+.copy-rights{text-align:center;margin-top:0em}
+.copy-rights p{color:#FFF;font-size:1em;line-height:1.8em;margin-top:60px}
+.copy-rights p a{color:#ff2a75;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-ms-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;text-decoration:none}
+.copy-rights p a:hover{color:#3faa53;text-decoration:none;transition:0.1s all;-webkit-transition:0.1s all;-moz-transition:0.1s all;-o-transition:0.1s all}
+form label {font-size:30px;color: #FFF;display: inline-block;text-align: center;width: 20px;}

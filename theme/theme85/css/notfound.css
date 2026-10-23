@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'AGoogle';
+  src: url('/theme/fonts/AGoogle.ttf') format('truetype'),
+       url('/theme/fonts/AGoogle.eot?#') format('eot'),
+       url('/theme/fonts/AGoogle.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+body{text-align:right;color:#fff;font-family:AGoogle;font-size:12px;direction:rtl;background:#1c1c1b;}
+a,a:visited{text-decoration:none;color:#FF0;}
+a:hover{color:#ADD8E6;text-shadow:#060 0 0 5px;}
+#countiner{background:url(../images/notfuond.back.png) no-repeat;width:800px;height:600px;position:relative;display:block;margin:10px auto;}
+#logo{background:url(../images/notfuond.logo.png) no-repeat;height:280px;width:300px;margin:140px auto 0;}
+#LogoText{height:300px;width:300px;font-size:18px;color:#fff;text-align:center;margin:-20px auto 0;}
+#LogoText span{color:red;}
+#msg{background:url(../images/notfuond.msg.png) no-repeat;height:130px;width:700px;margin-top:-200px;margin-left:auto;margin-right:auto;}
+#msg p{padding-top:30px;padding-right:100px;color:#FFF;}
+#w3{width: 176px;height: 31px;position: fixed;bottom: 0;right:0;}
+#w3 a{float: right;}

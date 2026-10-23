@@ -1,0 +1,16 @@
+.overlay_TarhPardaz_win img{border:none}
+.overlay_TarhPardaz_win{background-color:#666666}
+.TarhPardaz_win_nw{width:12px;height:28px;background:url(style2img/top_left.png) no-repeat}
+.TarhPardaz_win_n{background:url(style2img/top_mid.png) repeat-x;height:28px}
+.TarhPardaz_win_ne{width:21px;height:28px;background:url(style2img/top_right.png) no-repeat}
+.TarhPardaz_win_e{width:21px;background:url(style2img/center_right.png)  repeat-y top right}
+.TarhPardaz_win_w{width:12px;background:url(style2img/center_left.png) repeat-y top left}
+.TarhPardaz_win_sw{width:12px;height:18px;background:url(style2img/bottom_left.png) no-repeat}
+.TarhPardaz_win_s{background:url(style2img/bottom_mid.png) repeat-x 0 0;height:18px}
+.TarhPardaz_win_se,.IDesigners_win_sizer{width:21px;height:18px;background:url(style2img/bottom_right.png) no-repeat}
+.TarhPardaz_win_close{width:14px;height:14px;background:url(style2img/close.png) no-repeat;position:absolute;top:10px;right:22px;cursor:pointer;z-index:2000}
+.TarhPardaz_win_minimize{width:14px;height:15px;background:url(style2img/minimize.png) no-repeat;position:absolute;top:10px;right:60px;cursor:pointer;z-index:2000}
+.TarhPardaz_win_maximize{width:14px;height:15px;background:url(style2img/maximize.png) no-repeat;position:absolute;top:10px;right:40px;cursor:pointer;z-index:2000}
+.TarhPardaz_win_title{margin-top:0;height:14px;float:left;font-size:12px;font-family:Byekan;text-align:center;color:#fff;direction:rtl;width:100%}
+.TarhPardaz_win_content{background:url(style2img/overlay.png) repeat;overflow:auto;color:#000;font-family:Byekan;font-size:9pt}
+.TarhPardaz_win_sizer{cursor:se-resize}
